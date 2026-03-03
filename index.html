@@ -9,22 +9,37 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
       height: 100vh;
-      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42e695, #ff9a9e);
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #ff6ec4);
       background-size: 400% 400%;
-      animation: gradientMove 12s ease infinite;
-      text-align: center;
+      animation: gradientBG 15s ease infinite;
+      overflow-x: hidden;
       color: white;
+      text-align: center;
     }
 
-    @keyframes gradientMove {
+    @keyframes gradientBG {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
+    }
+
+    /* Floating particles */
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      animation: rise 20s infinite ease-in;
+    }
+
+    @keyframes rise {
+      0% { transform: translateY(0); opacity: 0.5; }
+      100% { transform: translateY(-1200px); opacity: 0; }
     }
 
     header {
@@ -33,38 +48,40 @@
     }
 
     header img {
-      width: 160px;
-      height: 160px;
+      width: 170px;
+      height: 170px;
       border-radius: 50%;
       border: 5px solid white;
       margin-bottom: 20px;
-      box-shadow: 0 0 30px rgba(255,255,255,0.8);
+      box-shadow: 0 0 40px rgba(255,255,255,0.8);
     }
 
     header h1 {
-      font-size: 38px;
+      font-size: 42px;
+      font-weight: bold;
     }
 
     header p {
       font-size: 18px;
       margin-top: 10px;
+      opacity: 0.9;
     }
 
     section {
-      background: rgba(255,255,255,0.95);
-      color: #333;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(15px);
       margin: 30px auto;
       padding: 30px;
       width: 85%;
-      max-width: 800px;
+      max-width: 900px;
       border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-      animation: fadeInUp 1.5s ease;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+      animation: fadeUp 1.5s ease;
     }
 
     h2 {
       margin-bottom: 15px;
-      color: #7873f5;
+      color: #ff6ec4;
     }
 
     ul {
@@ -73,10 +90,11 @@
 
     li {
       margin: 8px 0;
+      font-size: 16px;
     }
 
     a {
-      color: #ff6ec4;
+      color: #00f5ff;
       font-weight: bold;
       text-decoration: none;
     }
@@ -85,7 +103,7 @@
       margin-top: 40px;
       padding: 20px;
       font-size: 14px;
-      animation: fadeIn 2s ease-in;
+      opacity: 0.8;
     }
 
     @keyframes fadeIn {
@@ -93,7 +111,7 @@
       to { opacity: 1; }
     }
 
-    @keyframes fadeInUp {
+    @keyframes fadeUp {
       from { opacity: 0; transform: translateY(40px); }
       to { opacity: 1; transform: translateY(0); }
     }
@@ -101,6 +119,13 @@
 </head>
 
 <body>
+
+<!-- Floating bubbles -->
+<div class="bubble" style="left:10%; width:40px; height:40px;"></div>
+<div class="bubble" style="left:25%; width:60px; height:60px; animation-duration:25s;"></div>
+<div class="bubble" style="left:40%; width:30px; height:30px; animation-duration:18s;"></div>
+<div class="bubble" style="left:60%; width:70px; height:70px; animation-duration:22s;"></div>
+<div class="bubble" style="left:80%; width:50px; height:50px; animation-duration:20s;"></div>
 
 <header>
   <img src="profile.jpg" alt="Profile Photo">
@@ -110,7 +135,7 @@
 
 <section>
   <h2>About Me</h2>
-  <p>I am a passionate developer building modern and creative websites with smooth animations.</p>
+  <p>I am a passionate developer building creative and modern web applications with beautiful UI and smooth animations.</p>
 </section>
 
 <section>
@@ -119,6 +144,15 @@
     <li>🚀 Python</li>
     <li>🌐 HTML, CSS, JavaScript</li>
     <li>⚡ Git & GitHub</li>
+    <li>💡 Problem Solving</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <ul>
+    <li>🔐 Password Generator</li>
+    <li>🌍 Portfolio Website</li>
   </ul>
 </section>
 
@@ -132,7 +166,7 @@
 </section>
 
 <section>
-  <h2>Contact Me</h2>
+  <h2>Contact</h2>
   <p>Email: <a href="mailto:ykarthik485@gmail.com">ykarthik485@gmail.com</a></p>
 </section>
 
