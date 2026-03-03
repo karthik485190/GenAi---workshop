@@ -3,38 +3,55 @@
 <head>
   <title>Karthik Yadav | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
+      height: 100vh;
+      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42e695, #ff9a9e);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
       text-align: center;
+      color: white;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
       padding: 60px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.8);
     }
 
     header h1 {
-      font-size: 40px;
-      font-weight: bold;
+      font-size: 38px;
     }
 
     header p {
       font-size: 18px;
       margin-top: 10px;
-      opacity: 0.9;
     }
 
     section {
-      background: white;
+      background: rgba(255,255,255,0.95);
       color: #333;
       margin: 30px auto;
       padding: 30px;
@@ -42,16 +59,12 @@
       max-width: 800px;
       border-radius: 20px;
       box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
-    }
-
-    section:hover {
-      transform: translateY(-10px);
+      animation: fadeInUp 1.5s ease;
     }
 
     h2 {
       margin-bottom: 15px;
-      color: #764ba2;
+      color: #7873f5;
     }
 
     ul {
@@ -60,31 +73,29 @@
 
     li {
       margin: 8px 0;
-      font-weight: 500;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      background: linear-gradient(45deg, #667eea, #764ba2);
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
+    a {
+      color: #ff6ec4;
       font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-      background: linear-gradient(45deg, #764ba2, #667eea);
+      text-decoration: none;
     }
 
     footer {
       margin-top: 40px;
       padding: 20px;
       font-size: 14px;
-      opacity: 0.8;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -92,13 +103,14 @@
 <body>
 
 <header>
+  <img src="profile.jpg" alt="Profile Photo">
   <h1>Karthik Yadav</h1>
   <p>Full Stack Developer | Python Enthusiast 🚀</p>
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>I am a passionate developer building modern web applications and learning advanced technologies.</p>
+  <p>I am a passionate developer building modern and creative websites with smooth animations.</p>
 </section>
 
 <section>
@@ -107,15 +119,6 @@
     <li>🚀 Python</li>
     <li>🌐 HTML, CSS, JavaScript</li>
     <li>⚡ Git & GitHub</li>
-    <li>💻 Problem Solving</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <ul>
-    <li>🔐 Password Generator</li>
-    <li>🌍 Portfolio Website</li>
   </ul>
 </section>
 
@@ -129,14 +132,8 @@
 </section>
 
 <section>
-  <h2>Resume</h2>
-  <a href="#" class="btn">Download Resume</a>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email: yourmail@gmail.com</p>
-  <p>LinkedIn: your-link</p>
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:ykarthik485@gmail.com">ykarthik485@gmail.com</a></p>
 </section>
 
 <footer>
