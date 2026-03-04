@@ -1,178 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Karthik Yadav | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karthik Yadav | Portfolio</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
 
-    body {
-      height: 100vh;
-      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #ff6ec4);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      overflow-x: hidden;
-      color: white;
-      text-align: center;
-    }
+header{
+    text-align:center;
+    padding:40px 20px;
+}
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+header h1{
+    font-size:40px;
+    margin:0;
+}
 
-    /* Floating particles */
-    .bubble {
-      position: absolute;
-      bottom: -100px;
-      background: rgba(255,255,255,0.2);
-      border-radius: 50%;
-      animation: rise 20s infinite ease-in;
-    }
+header p{
+    font-size:18px;
+    margin-top:10px;
+}
 
-    @keyframes rise {
-      0% { transform: translateY(0); opacity: 0.5; }
-      100% { transform: translateY(-1200px); opacity: 0; }
-    }
+section{
+    background:white;
+    color:#333;
+    margin:20px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
 
-    header {
-      padding: 60px 20px;
-      animation: fadeIn 2s ease-in;
-    }
+h2{
+    color:#2c5364;
+    border-bottom:2px solid #2c5364;
+    padding-bottom:5px;
+}
 
-    header img {
-      width: 170px;
-      height: 170px;
-      border-radius: 50%;
-      border: 5px solid white;
-      margin-bottom: 20px;
-      box-shadow: 0 0 40px rgba(255,255,255,0.8);
-    }
+ul{
+    line-height:1.8;
+}
 
-    header h1 {
-      font-size: 42px;
-      font-weight: bold;
-    }
-
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-      opacity: 0.9;
-    }
-
-    section {
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(15px);
-      margin: 30px auto;
-      padding: 30px;
-      width: 85%;
-      max-width: 900px;
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-      animation: fadeUp 1.5s ease;
-    }
-
-    h2 {
-      margin-bottom: 15px;
-      color: #ff6ec4;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    li {
-      margin: 8px 0;
-      font-size: 16px;
-    }
-
-    a {
-      color: #00f5ff;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 14px;
-      opacity: 0.8;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+.footer{
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- Floating bubbles -->
-<div class="bubble" style="left:10%; width:40px; height:40px;"></div>
-<div class="bubble" style="left:25%; width:60px; height:60px; animation-duration:25s;"></div>
-<div class="bubble" style="left:40%; width:30px; height:30px; animation-duration:18s;"></div>
-<div class="bubble" style="left:60%; width:70px; height:70px; animation-duration:22s;"></div>
-<div class="bubble" style="left:80%; width:50px; height:50px; animation-duration:20s;"></div>
-
 <header>
-  <img src="profile.jpg" alt="Profile Photo">
-  <h1>Karthik Yadav</h1>
-  <p>Full Stack Developer | Python Enthusiast 🚀</p>
+    <h1>Karthik Yadav</h1>
+    <p>Python Developer | Web Developer | AI Enthusiast</p>
+    <p>Email: ykarthik485@gmail.com</p>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <p>I am a passionate developer building creative and modern web applications with beautiful UI and smooth animations.</p>
+    <h2>Profile</h2>
+    <p>
+    I am a passionate developer currently learning Full Stack Development, Python programming,
+    and Artificial Intelligence. I enjoy building modern websites, automation tools,
+    and AI-based projects.
+    </p>
 </section>
 
 <section>
-  <h2>Skills</h2>
-  <ul>
-    <li>🚀 Python</li>
-    <li>🌐 HTML, CSS, JavaScript</li>
-    <li>⚡ Git & GitHub</li>
-    <li>💡 Problem Solving</li>
-  </ul>
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Python Programming</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript (Basics)</li>
+        <li>Git & GitHub</li>
+        <li>AI Tools & Prompt Engineering</li>
+    </ul>
 </section>
 
 <section>
-  <h2>Projects</h2>
-  <ul>
-    <li>🔐 Password Generator</li>
-    <li>🌍 Portfolio Website</li>
-  </ul>
+    <h2>Projects</h2>
+    <ul>
+        <li><b>Password Generator</b> – Python program that generates secure random passwords.</li>
+        <li><b>Portfolio Website</b> – Personal portfolio website deployed using Vercel.</li>
+        <li><b>AI Chatbot Project</b> – Built a chatbot using AI tools and Python.</li>
+    </ul>
 </section>
 
 <section>
-  <h2>Certificates</h2>
-  <ul>
-    <li>📜 AICTE Internship</li>
-    <li>📜 Python Course</li>
-    <li>📜 Web Development Workshop</li>
-  </ul>
+    <h2>Education</h2>
+    <ul>
+        <li>B.Tech – Computer Science</li>
+        <li>Intermediate – Completed</li>
+        <li>SSC – Completed</li>
+    </ul>
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:ykarthik485@gmail.com">ykarthik485@gmail.com</a></p>
+    <h2>Certificates</h2>
+    <ul>
+        <li>AICTE Internship Certificate</li>
+        <li>Python Programming Course</li>
+        <li>Web Development Workshop</li>
+    </ul>
 </section>
 
-<footer>
-  © 2026 Karthik Yadav | Designed with ❤️
-</footer>
+<section>
+    <h2>Additional Information</h2>
+    <ul>
+        <li>Languages: English, Telugu, Hindi</li>
+        <li>Interests: AI, Web Development, Programming</li>
+    </ul>
+</section>
+
+<div class="footer">
+    © 2026 Karthik Yadav | Portfolio
+</div>
 
 </body>
 </html>
